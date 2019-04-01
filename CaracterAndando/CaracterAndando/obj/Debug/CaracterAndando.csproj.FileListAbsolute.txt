@@ -1,0 +1,7 @@
+C:\Users\aron.msoad\Desktop\visualStudio - tutorial\CaracterAndando\CaracterAndando\bin\Debug\CaracterAndando.exe.config
+C:\Users\aron.msoad\Desktop\visualStudio - tutorial\CaracterAndando\CaracterAndando\bin\Debug\CaracterAndando.exe
+C:\Users\aron.msoad\Desktop\visualStudio - tutorial\CaracterAndando\CaracterAndando\bin\Debug\CaracterAndando.pdb
+C:\Users\aron.msoad\Desktop\visualStudio - tutorial\CaracterAndando\CaracterAndando\obj\Debug\CaracterAndando.csprojAssemblyReference.cache
+C:\Users\aron.msoad\Desktop\visualStudio - tutorial\CaracterAndando\CaracterAndando\obj\Debug\CaracterAndando.csproj.CoreCompileInputs.cache
+C:\Users\aron.msoad\Desktop\visualStudio - tutorial\CaracterAndando\CaracterAndando\obj\Debug\CaracterAndando.exe
+C:\Users\aron.msoad\Desktop\visualStudio - tutorial\CaracterAndando\CaracterAndando\obj\Debug\CaracterAndando.pdb
