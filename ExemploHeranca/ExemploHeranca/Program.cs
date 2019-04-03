@@ -10,6 +10,13 @@ namespace ExemploHeranca
     {
         static void Main(string[] args)
         {
+            carro gol = new carro();
+            gol.Marca = "Volkswagen";
+            gol.Acelera();
+
+            bicicleta bike = new bicicleta();
+            bike.Acelera();
+
         }
     }
 }
