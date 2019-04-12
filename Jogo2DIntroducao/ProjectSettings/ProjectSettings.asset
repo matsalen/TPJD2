@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 79baf3c88429b644fa60fc62713d0e00
+  productGUID: 520bfc58803fc5d42978ee1c511a3d79
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -580,10 +580,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 6d0e00fe-6ce6-42c5-94cd-dff4c8748e00
+  cloudProjectId: da921489-7dec-4b3d-ba5a-44a6b37bfc4e
   framebufferDepthMemorylessMode: 0
   projectName: Jogo2DIntroducao
-  organizationId: matsale
+  organizationId: salmo_jr
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

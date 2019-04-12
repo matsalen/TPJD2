@@ -8,11 +8,16 @@ public class RobotController : MonoBehaviour
 
     public float forcaMovimento = 365f;
     public float velocidadeMaxima = 5f;
+    public Transform verificaSolo;
+    public LayerMask eSolo;
+    public float forcaPulo = 700f;
 
+    private float raioSolo = 0.2f;
+    private bool noSolo = false;
     private float h;
-    private float h2;
     private Animator anim;
     private Rigidbody2D rb2d;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,22 +26,33 @@ public class RobotController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
+    private void FixedUpdate()
+    {
+        noSolo = Physics2D.OverlapCircle(verificaSolo.position, raioSolo, eSolo);
+        anim.SetBool("Ground", noSolo);
+        anim.SetFloat("SpeedVert", rb2d.velocity.y);
+    }
+
     // Update is called once per frame
     void Update()
     {
+        // MOVIMENTO HORIZONTAL
         h = Input.GetAxis("Horizontal");
-        // DEFINIR SE MOVIMENTANDO
+
+       //rb2d.AddForce(new Vector2(h * forcaMovimento, rb2d.velocity.y));
+       rb2d.velocity = new Vector2(h * velocidadeMaxima, rb2d.velocity.y);
+
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
-        
 
-        rb2d.AddForce(new Vector2(h * velocidadeMaxima, rb2d.velocity.y));
-        //rb2d.velocity = (new Vector2(h * velocidadeMaxima, rb2d.velocity.y));
-
-      
-        if (h > 0 && !viradoDireita) Flip();       
+        if (h > 0 && !viradoDireita) Flip();
         else if (h < 0 && viradoDireita) Flip();
-     
-        
+
+        // PULO DO PLAYER
+        if (noSolo && Input.GetButtonDown("Jump"))
+        {
+            anim.SetBool("Ground", false);
+            rb2d.AddForce(new Vector2(0, forcaPulo));
+        }
     }
 
     private void Flip()
