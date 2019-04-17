@@ -339,7 +339,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.69, y: -2.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2053384330}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -358,8 +359,15 @@ MonoBehaviour:
   ViradoDireita: 1
   h: 0
   forcaAceleracao: 5
-  r: {fileID: 0}
-  anim: {fileID: 0}
+  ForcaPulo: 350
+  RaioSolo: 0.2
+  NoSolo: 0
+  r: {fileID: 663116173}
+  anim: {fileID: 663116171}
+  ESolo:
+    serializedVersion: 2
+    m_Bits: 256
+  VerificaSolo: {fileID: 2053384330}
 --- !u!1 &671648832
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 671648833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plataformas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -404,6 +412,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: madeira (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142562841591338101, guid: f3e7275d071f7114b8eb568703ff2fd3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1114609196657044486, guid: f3e7275d071f7114b8eb568703ff2fd3,
         type: 3}
@@ -473,7 +486,7 @@ GameObject:
   - component: {fileID: 1705863665}
   - component: {fileID: 1705863664}
   - component: {fileID: 1705863663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,6 +624,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 744222875}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2053384329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2053384330}
+  m_Layer: 0
+  m_Name: Ground
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2053384330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053384329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.143, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 663116175}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2119262761
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: madeira
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142562841591338101, guid: f3e7275d071f7114b8eb568703ff2fd3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1114609196657044486, guid: f3e7275d071f7114b8eb568703ff2fd3,
         type: 3}
@@ -743,6 +791,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: gelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972474223158171243, guid: f2f2b6c0297590a4c8b5bcf4dadde290,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 422426395681034404, guid: f2f2b6c0297590a4c8b5bcf4dadde290,
         type: 3}
